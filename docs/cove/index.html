@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#f7f7f2">
+  <meta name="theme-color" content="#070b12">
   <title>Cove — Your models. Your space.</title>
   <meta name="description" content="A local-first AI chat app for Mac. Compare up to four models, choose your providers, and keep conversation history on your device. In development by TokenFunPlus.">
   <link rel="canonical" href="https://tokenfunplus.github.io/cove/">
@@ -11,108 +11,85 @@
   <meta property="og:title" content="Cove — Your models. Your space.">
   <meta property="og:description" content="AI chat for Mac, with local history and your choice of model providers. In development.">
   <meta property="og:url" content="https://tokenfunplus.github.io/cove/">
-  <meta property="og:image" content="https://tokenfunplus.github.io/assets/cove-social.png">
+  <meta property="og:image" content="https://tokenfunplus.github.io/assets/cove-social.png?v=2">
   <meta name="twitter:card" content="summary_large_image">
   <link rel="icon" href="icon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="../assets/site.css">
-  <script src="../assets/site.js" defer></script>
+  <link rel="stylesheet" href="../assets/site.css?v=2">
+  <link rel="preload" href="../assets/fonts/space-grotesk-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <script src="../assets/site.js?v=2" defer></script>
+  <script src="../assets/scenes.js?v=2" defer></script>
 </head>
-<body>
+<body class="cove-page">
   <a class="skip-link" href="#main">Skip to content</a>
-  <header class="site-header">
-    <div class="container header-inner">
-      <a class="brand" href="./" aria-label="Cove home"><img src="icon.svg" width="34" height="34" alt="">Cove<span class="brand-by">BY TOKENFUNPLUS</span></a>
-      <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="navigation">Menu</button>
-      <nav class="header-nav" id="navigation" data-navigation aria-label="Main navigation">
-        <a href="#inside">Inside Cove</a>
-        <a href="#privacy">Privacy</a>
-        <a href="#availability" class="button secondary small-button">In development <span aria-hidden="true">↗</span></a>
-      </nav>
-    </div>
-  </header>
-
+  <header class="site-header"><div class="container header-inner">
+    <a class="brand" href="./" aria-label="Cove home"><img src="icon.svg" width="29" height="29" alt="">Cove<span class="brand-by">BY TOKENFUNPLUS</span></a>
+    <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="navigation">Menu</button>
+    <nav class="header-nav" id="navigation" data-navigation aria-label="Main navigation"><a href="#inside">The workspace</a><a href="#privacy">Privacy</a><a class="button secondary small-button" href="#availability">In development <span aria-hidden="true">↗</span></a></nav>
+  </div></header>
   <main id="main">
-    <section class="cove-hero container" aria-labelledby="hero-title">
-      <div class="cove-hero-grid">
-        <div>
-          <p class="eyebrow">A place for your AI conversations</p>
-          <h1 id="hero-title" class="serif">Your models.<br>Your <em>space.</em></h1>
-          <p class="intro">A local-first AI chat app for Mac. Bring your providers together, compare their answers, and make the conversation your own.</p>
-          <div class="actions">
-            <a class="button" href="#inside">Explore Cove <span aria-hidden="true">↓</span></a>
-            <a class="button secondary" href="#privacy">How privacy works</a>
-          </div>
+    <section class="hero-shell" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">A local-first AI workspace for Mac</p>
+          <h1 class="hero-title" id="hero-title">Your models.<br><span>Your space.</span></h1>
+          <p class="intro">One place to compare perspectives, shape your conversations, and keep your history on your Mac.</p>
+          <div class="actions"><a class="button" href="#inside">Explore the workspace <span aria-hidden="true">↘</span></a><a class="button secondary" href="#privacy">Privacy, explained</a></div>
           <p class="availability-note">In development for Apple Silicon Macs. No public download yet.</p>
         </div>
-
-        <div class="cove-preview-wrap">
-          <div class="browser-frame cove-preview" aria-label="Illustrative Cove comparison preview">
-            <div class="browser-top"><i></i><i></i><i></i><span>Cove / a conversation of your own</span></div>
-            <div class="cove-app">
-              <aside class="app-sidebar" aria-label="Illustrative conversation list">
-                <div class="app-name"><img src="icon.svg" alt="" width="22" height="22">Cove</div>
-                <div class="sidebar-new">＋ New conversation</div>
-                <p class="sidebar-label">Recent</p>
-                <div class="sidebar-item current">A small creative project</div>
-                <div class="sidebar-item">Notes for the weekend</div>
-                <div class="sidebar-item">A different perspective</div>
-                <p class="sidebar-local">◉ History on this Mac</p>
-              </aside>
-              <div class="app-main">
-                <div class="app-toolbar"><span>A small creative project</span><span class="demo-tag">2 models</span></div>
-                <p class="sample-prompt">Suggest a small creative project for a quiet Sunday.</p>
-                <div class="answer-grid">
-                  <div class="answer-card selected">
-                    <div class="answer-label"><span class="model-dot"></span> Model A</div>
-                    <p>Make a field guide to your street. Take five photos, notice the little details, and give each one a short caption.</p>
-                    <button class="sample-select" type="button" data-select-answer="A" aria-pressed="true">Selected for next turn ✓</button>
-                  </div>
-                  <div class="answer-card">
-                    <div class="answer-label"><span class="model-dot blue"></span> Model B</div>
-                    <p>Build a one-page zine. Pick a theme, combine a few sketches with a short story, and fold it into something to keep.</p>
-                    <button class="sample-select" type="button" data-select-answer="B" aria-pressed="false">Use this answer</button>
-                  </div>
-                </div>
-                <p class="context-note" data-context-note aria-live="polite">Next turn uses Model A's answer. The other answer stays in your history.</p>
-                <div class="app-composer" aria-hidden="true"><span>Where should we take this next?</span><b>↑</b></div>
-              </div>
-            </div>
-          </div>
-          <p class="preview-caption">Illustrative preview with sample content. Try choosing an answer.</p>
+        <div class="scene" data-scene="cove">
+          <img class="scene-fallback" src="../assets/cove-sculpture.svg" alt="" aria-hidden="true" width="620" height="620">
+          <canvas aria-hidden="true"></canvas>
+          <p class="scene-coordinate" aria-hidden="true">COVE / MACOS<br>YOUR SPACE, IN MOTION</p>
+          <p class="scene-note" aria-hidden="true">A different perspective.</p>
+          <button class="motion-toggle" data-motion-toggle type="button" hidden aria-pressed="false">Pause motion Ⅱ</button>
         </div>
       </div>
+      <div class="container hero-index"><span>01 / A conversation of your own</span><span>Made for Mac. Shaped by you.</span></div>
     </section>
-
-    <div class="container promise-row" aria-label="Product overview">
-      <span>Made for macOS</span><span>OpenAI-compatible providers</span><span>Local conversation history</span><span>By TokenFunPlus</span>
-    </div>
 
     <section class="container section" id="inside" aria-labelledby="inside-title">
-      <div class="section-head">
-        <div><p class="eyebrow">Inside Cove</p><h2 id="inside-title" class="serif">More perspectives.<br>One conversation.</h2></div>
-        <p>Different models see things differently. Cove gives you room to compare, choose, and keep going.</p>
+      <div class="section-head"><div><p class="eyebrow">Room to think differently</p><h2 id="inside-title">One prompt.<br>A wider perspective.</h2></div><p>Compare up to four models, then choose the answer that takes the conversation forward.</p></div>
+      <div class="cove-preview-wrap">
+        <div class="browser-frame" aria-label="Illustrative Cove comparison preview">
+          <div class="browser-top"><i></i><i></i><i></i><span>Cove / A small creative project</span></div>
+          <div class="cove-app">
+            <aside class="app-sidebar" aria-label="Illustrative conversation list">
+              <div class="app-name"><img src="icon.svg" width="25" height="25" alt="">Cove</div>
+              <p class="sidebar-label">Your conversations</p><div class="sidebar-item current">A small creative project</div><div class="sidebar-item">Notes for the weekend</div><div class="sidebar-item">A different perspective</div><p class="sidebar-local">◉ History on this Mac</p>
+            </aside>
+            <div class="app-main">
+              <div class="app-toolbar"><span>A small creative project</span><span class="demo-tag">Comparing 2 models</span></div>
+              <p class="sample-prompt">Suggest a small creative project for a quiet Sunday.</p>
+              <div class="answer-grid">
+                <div class="answer-card selected"><div class="answer-label"><span class="model-dot"></span>Model A</div><p>Make a field guide to your street. Take five photos, notice the little details, and give each one a short caption.</p><button class="sample-select" type="button" data-select-answer="A" aria-pressed="true">Selected for next turn ✓</button></div>
+                <div class="answer-card"><div class="answer-label"><span class="model-dot blue"></span>Model B</div><p>Build a one-page zine. Pick a theme, combine a few sketches with a short story, and fold it into something to keep.</p><button class="sample-select" type="button" data-select-answer="B" aria-pressed="false">Use this answer</button></div>
+              </div>
+              <p class="context-note" data-context-note aria-live="polite">Next turn uses Model A's answer. The other answer stays in your history.</p>
+              <div class="app-composer" aria-hidden="true"><span>Where should we take this next?</span><b>↑</b></div>
+            </div>
+          </div>
+        </div>
       </div>
+      <p class="preview-caption">An illustrative preview with sample content. Select an answer to see how context works.</p>
       <div class="feature-rows">
-        <article class="feature-row"><span class="number">01</span><h3>Your providers, together.</h3><p>Connect OpenAI-compatible providers and choose the models you want to use. Start with one model or compare up to four responses to the same prompt.</p></article>
-        <article class="feature-row"><span class="number">02</span><h3>You choose what comes next.</h3><p>Select the answer that should become context for the next turn, or skip a turn from future context. The other answers remain in your local history.</p></article>
-        <article class="feature-row"><span class="number">03</span><h3>A history you can work with.</h3><p>Search, pin, archive, rename, and export your conversations as Markdown or JSON. Keep the workspace familiar with light, dark, and system appearance.</p></article>
+        <article class="feature-row"><span class="number">01<span class="number-label"> / CONNECT</span></span><h3>Your providers.<br>One familiar place.</h3><p>Bring OpenAI-compatible providers together. Start with one model, or give the same prompt to up to four models at once.</p></article>
+        <article class="feature-row"><span class="number">02<span class="number-label"> / CHOOSE</span></span><h3>You decide<br>what comes next.</h3><p>Choose the answer for later context, or skip a turn. The other perspectives remain in your local history.</p></article>
+        <article class="feature-row"><span class="number">03<span class="number-label"> / KEEP</span></span><h3>A history<br>you can work with.</h3><p>Search, pin, archive, and rename conversations. Export what you need as Markdown or JSON. Make the workspace yours.</p></article>
       </div>
     </section>
 
-    <section class="container" id="privacy" aria-labelledby="privacy-title">
-      <div class="privacy-panel">
-        <p class="eyebrow">Know where your words go</p>
-        <h2 id="privacy-title" class="serif">Local history.<br>Clear boundaries.</h2>
-        <div class="privacy-grid">
-          <div class="privacy-column"><h3>On your Mac</h3><p>Conversation history and settings are stored locally. Provider keys use macOS Keychain by default. There is no Cove account or Cove cloud conversation store.</p></div>
-          <div class="privacy-column"><h3>With your selected provider</h3><p>Prompts and selected conversation context are sent to the provider you choose. The response records which provider and configuration were used.</p></div>
-        </div>
+    <section class="privacy-section" id="privacy" aria-labelledby="privacy-title"><div class="container section privacy-layout">
+      <div class="privacy-copy"><p class="eyebrow">A clearer picture of privacy</p><h2 id="privacy-title">Your history.<br>Close to home.</h2><p>Conversations live on your Mac. Provider keys use macOS Keychain by default. There is no Cove account or Cove cloud conversation store.</p><p>Your selected provider receives prompts and conversation context. Each response keeps a record of the provider and configuration used.</p></div>
+      <div class="boundary-map">
+        <div class="boundary-topline"><span>WHERE YOUR WORDS GO</span><span>COVE / DATA</span></div>
+        <div class="boundary-node"><svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.3" aria-hidden="true"><rect x="5" y="7" width="30" height="22" rx="3"/><path d="M2 33h36M16 29v4m8-4v4M13 14h14m-14 5h9"/></svg><div><h3>On your Mac</h3><p>History, settings, and provider keys</p></div></div>
+        <div class="boundary-path">Your prompt + selected context ↓</div>
+        <div class="boundary-node remote"><svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.3" aria-hidden="true"><path d="M11 29a8 8 0 0 1-1-16 11 11 0 0 1 21 2 7 7 0 0 1-1 14Z"/><path d="m16 22 4 4 7-8"/></svg><div><h3>Your selected provider</h3><p>Model execution and available verification</p></div></div>
         <p class="privacy-note">Local-first describes storage. Cove does not encrypt its local history database. Model execution and verification capabilities depend on your provider.</p>
       </div>
-    </section>
-
+    </div></section>
     <section class="container section faq" aria-labelledby="questions-title">
-      <div><p class="eyebrow">A few useful details</p><h2 id="questions-title" class="serif">Before you<br>make yourself at home.</h2></div>
+      <div><p class="eyebrow">A few useful details</p><h2 id="questions-title" class="serif">A few things<br>worth knowing.</h2></div>
       <div>
         <details><summary>Does Cove run models on my Mac?</summary><p>Cove connects to model providers. Your history stays on your Mac, while inference happens wherever your configured provider runs. Local storage does not imply local model execution.</p></details>
         <details><summary>How does model comparison work?</summary><p>Send one prompt to up to four selected models. Each answer is separate. Choose the answer to use in later context, or skip the turn; unselected answers stay in local history.</p></details>
@@ -121,14 +98,8 @@
       </div>
     </section>
 
-    <section class="container closing" id="availability" aria-labelledby="availability-title">
-      <span class="status">In development</span>
-      <h2 id="availability-title" class="serif">A space of your own,<br>taking shape.</h2>
-      <p>We're building Cove for Mac. Explore our public work while we get it ready.</p>
-      <div class="actions"><a class="button" href="https://github.com/tokenfunplus">Visit TokenFunPlus <span aria-hidden="true">↗</span></a><a class="button secondary" href="../">See our projects</a></div>
-    </section>
+    <section class="container closing" id="availability" aria-labelledby="availability-title"><span class="status">In development</span><h2 id="availability-title">Make room for<br>a different perspective.</h2><p>Cove is taking shape for Mac. Explore our public work while we get it ready.</p><div class="actions"><a class="button" href="https://github.com/tokenfunplus">Visit TokenFunPlus <span aria-hidden="true">↗</span></a><a class="button secondary" href="../">All projects</a></div></section>
   </main>
-
   <footer class="site-footer"><div class="container footer-inner"><a href="../">Cove / A TokenFunPlus project</a><div class="footer-links"><a href="#privacy">Privacy &amp; data</a><a href="../binance-studio/">Binance Studio</a><a href="https://github.com/tokenfunplus">GitHub ↗</a></div></div></footer>
 </body>
 </html>

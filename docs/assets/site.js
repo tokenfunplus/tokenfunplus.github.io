@@ -46,7 +46,7 @@ const galleryImage = document.querySelector('[data-gallery-preview]');
 const galleryCaption = document.querySelector('[data-gallery-description]');
 const galleryLink = document.querySelector('[data-gallery-link]');
 
-galleryButtons.forEach((button) => {
+galleryButtons.forEach((button, index) => {
   button.addEventListener('click', () => {
     if (!galleryImage) return;
     galleryButtons.forEach((item) => item.setAttribute('aria-pressed', String(item === button)));
@@ -54,5 +54,6 @@ galleryButtons.forEach((button) => {
     galleryImage.alt = button.dataset.galleryAlt;
     if (galleryCaption) galleryCaption.textContent = button.dataset.galleryCaption;
     if (galleryLink) galleryLink.href = button.dataset.galleryImage;
+    document.dispatchEvent(new CustomEvent('product-theme-change', { detail: index }));
   });
 });

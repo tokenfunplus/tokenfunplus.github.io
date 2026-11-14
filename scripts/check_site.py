@@ -86,6 +86,10 @@ def main():
             elif reference.fragment and target in pages and unquote(reference.fragment) not in pages[target].ids:
                 errors.append(f"{path.relative_to(ROOT)}: missing anchor {value}")
     ET.parse(ROOT / "sitemap.xml")
+    for stylesheet in ROOT.rglob("*.css"):
+        for value in re.findall(r"url\(['\"]?([^)'\"]+)['\"]?\)", stylesheet.read_text()):
+            if not urlsplit(value).scheme and not target_path(stylesheet, value).is_file():
+                errors.append(f"{stylesheet.relative_to(ROOT)}: missing CSS resource {value}")
     if errors:
         print("\n".join(errors), file=sys.stderr)
         return 1
