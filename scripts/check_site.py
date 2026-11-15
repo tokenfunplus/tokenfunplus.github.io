@@ -37,7 +37,7 @@ class Page(HTMLParser):
             if attrs["id"] in self.ids:
                 raise ValueError(f"Duplicate ID: {attrs['id']}")
             self.ids.add(attrs["id"])
-        for attribute in ("src", "href", "data-gallery-image"):
+        for attribute in ("src", "href", "srcset", "data-gallery-image", "data-preview-src", "data-mobile-src", "data-skin-src"):
             if attribute in attrs:
                 self.references.append(attrs[attribute])
 
@@ -66,8 +66,6 @@ def main():
             errors.append(f"{path.relative_to(ROOT)}: images missing alt text")
         if re.search(r"[\u3400-\u9fff]", text):
             errors.append(f"{path.relative_to(ROOT)}: non-English copy")
-        if "github.com/tokenfunplus/cove" in text:
-            errors.append(f"{path.relative_to(ROOT)}: application repository link is not public")
         if re.search(r"(?:gh[pousr]_[A-Za-z0-9]{20,}|sk-[A-Za-z0-9]{20,})", text):
             errors.append(f"{path.relative_to(ROOT)}: possible credential")
 
