@@ -21,7 +21,7 @@ GitHub Pages publishes `docs/` from `main`. A push to that branch triggers a new
 ## Content and privacy
 
 - All copy is English. Product capabilities must match the relevant project documentation.
-- Cove is public and its `0.1.0-beta.1` release is available. Keep the version, requirements, release links, and download link aligned with the published GitHub release. Screenshot previews on the website do not contact a model provider.
+- Cove is public and its `0.1.0-beta.2` release is available. Keep the version, requirements, release links, file chat limits, and download link aligned with the published GitHub release. The current UI is English and user content supports Unicode. Screenshot previews on the website do not contact a model provider.
 - Cove stores history locally, while prompts go to the selected provider. Do not imply that model execution is local or that all providers support confidential inference.
 - Binance Studio screenshots come from its public simulation pages. Prices and orders shown are examples, with no account connected.
 - Keep credentials, conversation data, personal notes, and local application state out of this repository.
@@ -39,7 +39,7 @@ When editing graphics, check actual shader compilation, pause/resume, context lo
 
 Binance Studio screenshots and its icon come from [tokenfunplus/binance-theme](https://github.com/tokenfunplus/binance-theme), commit `82804157c44a6cfe70b29edb1d8f2b239cfefe00`. Its Apache 2.0 license is retained at `docs/binance-studio/assets/LICENSE.txt`.
 
-Cove screenshots were captured from its actual Chat Surface at commit `25961b7`, using an isolated temporary data directory, synthetic conversations, and a local simulated provider. Atlas and Lumen are demo model labels. The screenshots contain no user conversation history or real credentials. The Cove icon is the product's supplied app icon, and its social image uses the actual application capture. Binance Studio's social image uses original procedural artwork. Do not replace screenshots with illustrations that imply unimplemented features.
+Cove screenshots were captured from its actual Chat Surface at Beta 2 commit `d82c39f`, using an isolated temporary data directory, synthetic conversations, and a local simulated provider. Atlas and Lumen are demo model labels. The screenshots include text chat, model comparisons, saved source citations, four skins, and desktop/mobile views. They contain no user conversation history or real credentials. The Cove icon uses the shared blue and teal wave mark introduced in Beta 2, and its social image uses the actual application capture. Binance Studio's social image uses original procedural artwork. Do not replace screenshots with illustrations that imply unimplemented features.
 
 Manrope and Space Grotesk are self-hosted Latin variable fonts from [Google Fonts](https://github.com/google/fonts). Their SIL Open Font Licenses are retained in `docs/assets/fonts/`.
 
