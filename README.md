@@ -21,7 +21,7 @@ GitHub Pages publishes `docs/` from `main`. A push to that branch triggers a new
 ## Content and privacy
 
 - All copy is English. Product capabilities must match the relevant project documentation.
-- Cove is public and its `0.1.0-beta.2` release is available. Keep the version, requirements, release links, file chat limits, and download link aligned with the published GitHub release. The current UI is English and user content supports Unicode. Screenshot previews on the website do not contact a model provider.
+- Cove is public and its `0.1.0-beta.3` release is available. Keep the version, requirements, release links, file chat limits, and download link aligned with the published GitHub release. The current UI is English and user content supports Unicode. Screenshot previews on the website do not contact a model provider.
 - Cove stores history locally, while prompts go to the selected provider. Do not imply that model execution is local or that all providers support confidential inference.
 - Binance Studio screenshots come from its public simulation pages. Prices and orders shown are examples, with no account connected.
 - Keep credentials, conversation data, personal notes, and local application state out of this repository.
@@ -44,3 +44,5 @@ Cove screenshots were captured from its actual Chat Surface at Beta 2 commit `d8
 Manrope and Space Grotesk are self-hosted Latin variable fonts from [Google Fonts](https://github.com/google/fonts). Their SIL Open Font Licenses are retained in `docs/assets/fonts/`.
 
 Cove uses the self-hosted Geist Latin variable font from its application dependency `@fontsource-variable/geist` 5.2.9. Its SIL Open Font License is retained at `docs/cove/assets/geist-OFL.txt`.
+
+Focus and timeline previews for Beta 3 use UI commit `22441b6`, included in release source `23503cd`. They were captured with an isolated Local Service, synthetic prompts, and a simulated provider; bookmarks contain only fixture identifiers. The earlier file-chat and skin captures retain their Beta 2 provenance above.
