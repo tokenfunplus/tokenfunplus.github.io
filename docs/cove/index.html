@@ -11,7 +11,7 @@
   <meta property="og:title" content="Cove — A little more room for your AI.">
   <meta property="og:description" content="Reuse answers, choose models with richer details, and read collapsible reasoning and local equations. Cove 0.1.0-beta.5 is available now.">
   <meta property="og:url" content="https://tokenfunplus.github.io/cove/">
-  <meta property="og:image" content="https://tokenfunplus.github.io/cove/assets/math-desktop.png?v=5">
+  <meta property="og:image" content="https://tokenfunplus.github.io/assets/cove-social.png?v=7">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta name="twitter:card" content="summary_large_image">
@@ -26,7 +26,7 @@
     <div class="wrap header-inner">
       <a class="brand" href="./" aria-label="Cove home"><img src="icon.svg?v=4" width="32" height="32" alt="">Cove</a>
       <nav class="navigation" id="navigation" data-navigation aria-label="Main navigation">
-        <a href="#features">Features</a><a href="#files">File chat</a><a href="#workspace">Your workspace</a><a href="#privacy">Privacy</a>
+        <a href="#features">Features</a><a href="#answer-tools">Answer tools</a><a href="#files">File chat</a><a href="#workspace">Your workspace</a><a href="#privacy">Privacy</a>
       </nav>
       <button class="menu-toggle" data-menu type="button" aria-controls="navigation" aria-expanded="false">Menu</button>
       <a class="button compact header-download" href="https://github.com/tokenfunplus/cove/releases/download/v0.1.0-beta.5/Cove-0.1.0-beta.5-arm64.dmg">Download for Mac <span aria-hidden="true">↓</span></a>
@@ -47,9 +47,10 @@
 
     <section class="wide product-section reveal" id="preview" aria-label="Explore the Cove workspace">
       <div class="preview-controls"><div class="segmented js-only" role="group" aria-label="Choose a workspace preview">
-        <button type="button" aria-pressed="true" data-preview-src="assets/chat-light.webp?v=4" data-mobile-src="assets/chat-mobile.webp?v=4" data-preview-alt="Actual Cove workspace in light mode, showing a sample conversation about weekend creative projects." data-preview-caption="The actual Cove workspace. Sample prompts and simulated model replies.">Chat</button>
+        <button type="button" aria-pressed="false" data-preview-src="assets/chat-light.webp?v=4" data-mobile-src="assets/chat-mobile.webp?v=4" data-preview-alt="Actual Cove workspace in light mode, showing a sample conversation about weekend creative projects." data-preview-caption="The actual Cove workspace. Sample prompts and simulated model replies.">Chat</button>
         <button type="button" aria-pressed="false" data-preview-src="assets/compare-light.webp?v=4" data-mobile-src="assets/compare-mobile.webp?v=4" data-preview-alt="Actual Cove workspace with two simulated model replies side by side and one answer selected for the next turn." data-preview-caption="Compare perspectives and choose the answer to continue with. Simulated model replies.">Compare models</button>
-        <button type="button" aria-pressed="false" data-preview-src="assets/workbench-desktop.png?v=5" data-mobile-src="assets/workbench-mobile.png?v=5" data-preview-alt="Cove's actual answer workbench beside a synthetic conversation." data-preview-caption="Edit a window-local draft and review model revisions before applying them. Synthetic content.">Workbench</button>
+        <button type="button" aria-pressed="true" data-preview-src="assets/workbench-desktop.png?v=5" data-mobile-src="assets/workbench-mobile.png?v=5" data-preview-alt="Cove's actual answer workbench beside a synthetic conversation." data-preview-caption="Edit a window-local draft and review model revisions before applying them. Synthetic content.">Workbench</button>
+        <button type="button" aria-pressed="false" data-preview-src="assets/models-desktop.png?v=5" data-mobile-src="assets/models-mobile.png?v=5" data-preview-alt="Actual Cove model picker showing a local model-family icon and synthetic Provider-advertised context, price, and capabilities." data-preview-caption="Model names, advertised details, and local icons in one picker. Synthetic catalog content.">Model picker</button>
         <button type="button" aria-pressed="false" data-preview-src="assets/math-desktop.png?v=5" data-mobile-src="assets/math-mobile.png?v=5" data-preview-alt="Locally rendered equations and matrices in Cove model comparison, using synthetic replies." data-preview-caption="Local KaTeX rendering, with long equations contained inside comparison cards. Synthetic content.">Equations</button>
         <button type="button" aria-pressed="false" data-preview-src="assets/focus-light.webp?v=5" data-mobile-src="assets/focus-mobile.webp?v=5" data-preview-alt="Actual Cove Focus mode with a compact header and composer, a turn preview, and browser-local bookmarks. All content is synthetic." data-preview-caption="Focus mode. More room to read, with timeline previews and browser-local bookmarks.">Focus</button>
         <button type="button" aria-pressed="false" data-preview-src="assets/files-light.webp?v=4" data-mobile-src="assets/files-mobile.webp?v=4" data-preview-alt="Actual Cove file chat with a saved Markdown source, a simulated answer, and source citations." data-preview-caption="Saved sources in Cove. Saved source text and simulated model replies.">Files</button>
@@ -58,11 +59,11 @@
       <div class="product-stage"><div class="app-window">
         <div class="window-bar" aria-hidden="true"><i></i><i></i><i></i><span>Cove</span></div>
         <picture>
-          <source data-preview-mobile media="(max-width: 540px)" srcset="assets/chat-mobile.webp?v=4">
-          <img class="product-shot" data-preview src="assets/chat-light.webp?v=4" width="2160" height="1440" alt="Actual Cove workspace in light mode, showing a sample conversation about weekend creative projects." fetchpriority="high">
+          <source data-preview-mobile media="(max-width: 540px)" srcset="assets/workbench-mobile.png?v=5">
+          <img class="product-shot" data-preview src="assets/workbench-desktop.png?v=5" width="1440" height="900" alt="Actual Cove answer workbench beside a synthetic conversation." fetchpriority="high">
         </picture>
       </div></div>
-      <p class="preview-caption"><span data-preview-description>The actual Cove workspace. Sample prompts and simulated model replies.</span> <a data-full-preview href="assets/chat-light.webp?v=4" target="_blank" rel="noopener">Open full preview ↗</a></p>
+      <p class="preview-caption"><span data-preview-description>Edit a window-local draft and review model revisions before applying them. Synthetic content.</span> <a data-full-preview href="assets/workbench-desktop.png?v=5" target="_blank" rel="noopener">Open full preview ↗</a></p>
     </section>
 
     <div class="wrap benefits" aria-label="A few reasons to make room for Cove">
@@ -86,7 +87,11 @@
       <div class="center-heading"><p class="eyebrow">New in Beta 5</p><h2 id="answer-tools-title">Make more of an answer.</h2><p>Explore a passage in a separate conversation, work on a draft, and read equations without leaving your workspace.</p></div>
       <div class="privacy-grid">
         <article class="privacy-card"><h3>From a reply to a working draft.</h3><p>Ask about selected text in a separate local conversation. Open an answer in the workbench, edit with undo and preview, request a revision, then review changes before applying them. Download important drafts as Markdown.</p><div class="privacy-points"><span>Side conversations</span><span>Reviewed revisions</span><span>Window-local drafts</span></div></article>
-        <article class="privacy-card remote"><h3>More clarity while you read.</h3><p>Reasoning folds after streaming. Equations render with local fonts. Response details bring together observed timings, reported tokens, Provider information, and available verification reports. Missing measurements remain unavailable.</p><div class="privacy-points"><span>Local equations</span><span>Response details</span><span>Stable reading</span></div></article>
+        <article class="privacy-card remote"><h3>More clarity while you read.</h3><p>Read Provider-declared reasoning separately from the final answer. Reasoning folds after streaming, and equations render with local fonts. Long formulas stay inside comparison cards; reading anchors preserve your place while following is paused.</p><div class="privacy-points"><span>Local equations</span><span>Response details</span><span>Stable reading</span></div></article>
+      </div>
+      <div class="privacy-grid" style="margin-top:22px">
+        <article class="privacy-card"><h3>Choose a model with more context.</h3><p>See Provider-advertised context limits, prices, and capabilities alongside local brand icons. Narrow the catalog with filters, keep favorites close, and save model combinations for later.</p><div class="privacy-points"><span>Model details</span><span>Favorites &amp; filters</span><span>Saved combinations</span></div></article>
+        <article class="privacy-card remote"><h3>See what was recorded.</h3><p>One Response details panel brings together observed timings, reported tokens, original Provider information, and available verification reports. Optional cost estimates use rates you enter; missing measurements stay unavailable.</p><div class="privacy-points"><span>Response measurements</span><span>Provider snapshots</span><span>Verification reports</span></div></article>
       </div>
       <p class="privacy-note">Model selection adds brand icons, advertised details, favorites, filters, and saved combinations. Editing a saved prompt creates an independent branch. Drafts stay in window memory; model requests go to your chosen Provider.</p>
     </section>
