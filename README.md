@@ -21,7 +21,7 @@ GitHub Pages publishes `docs/` from `main`. A push to that branch triggers a new
 ## Content and privacy
 
 - All copy is English. Product capabilities must match the relevant project documentation.
-- Cove is public and its `0.1.0-beta.6` release is available. Keep the version, requirements, release links, file chat limits, and download link aligned with the published GitHub release. The current UI is English and user content supports Unicode. Screenshot previews on the website do not contact a model provider.
+- Cove is public and its `0.1.0-beta.7` release is available. Keep the version, requirements, release links, file chat limits, and download link aligned with the published GitHub release. The current UI is English and user content supports Unicode. Screenshot previews on the website do not contact a model provider.
 - Cove stores history locally, while prompts go to the selected provider. Do not imply that model execution is local or that all providers support confidential inference.
 - Binance Studio screenshots come from its public simulation pages. Prices and orders shown are examples, with no account connected.
 - Keep credentials, conversation data, personal notes, and local application state out of this repository.
@@ -54,3 +54,5 @@ The Beta 5 update adds answer tools, richer model selection, response details, c
 The current organization/website cover is rendered at 1200 x 630 from [the shared HTML source](https://github.com/tokenfunplus/.github/blob/main/design/cove/index.html), with its actual synthetic workbench capture. The landing preview starts with the workbench and includes the model picker. Model catalog values are simulated; icons do not establish verification. Earlier social artwork is retained in Git history. Header navigation contrast remains readable over screenshots, and preview controls wrap on narrow screens.
 
 The Beta 6 update adds continuous Debate, Debate Focus, time/type history filters, state/round labels, and schema 20 upgrade guidance. The new Debate and history captures use the synthetic browser acceptance fixtures from Cove UI source `e9323d1`, with isolated temporary data and a loopback simulated Provider. The mobile Debate capture shows dark mode. Earlier captures and the shared organization cover retain their provenance above.
+
+The Beta 7 update aligns release links and schema 21 guidance with Cove source `4941d918b57f96dd1af3863f0c4c8c62e79dde24`. It describes cited stage summaries, reported usage and optional cost estimates, explicit budget pause, configurable pacing, and compact Focus. The desktop Focus image comes from that source tree; the mobile Focus image was captured by the isolated browser acceptance fixture at UI source `2c153d2c57eb76b374ca80cdb1f0298edcbd5444`, included in this release. Both use synthetic content and loopback simulated Providers. Other images retain their recorded provenance.
