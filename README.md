@@ -21,8 +21,8 @@ GitHub Pages publishes `docs/` from `main`. A push to that branch triggers a new
 ## Content and privacy
 
 - All copy is English. Product capabilities must match the relevant project documentation.
-- Cove is public and its `0.1.0-beta.8` release is available. Keep the version, requirements, release links, file chat limits, and download link aligned with the published GitHub release. The current UI is English and user content supports Unicode. Screenshot previews on the website do not contact a model provider.
-- Cove stores history locally, while prompts go to the selected provider. Do not imply that model execution is local or that all providers support confidential inference.
+- Cove is public and its `0.1.0-beta.9` release is available. Keep the version, requirements, release links, file chat limits, and download link aligned with the published GitHub release. The current UI is English and user content supports Unicode. Screenshot previews on the website do not contact a model provider.
+- Cove stores history locally. Installed local chat, selected-document search, and speech run on this Mac; cloud Providers receive the prompt and selected context when chosen. Do not imply every catalog candidate is integrated or every Provider supports confidential inference.
 - Binance Studio screenshots come from its public simulation pages. Prices and orders shown are examples, with no account connected.
 - Keep credentials, conversation data, personal notes, and local application state out of this repository.
 - The site has no analytics, forms, external fonts, or third-party runtime scripts.
@@ -58,3 +58,5 @@ The Beta 6 update adds continuous Debate, Debate Focus, time/type history filter
 The Beta 7 update aligns release links and schema 21 guidance with Cove source `4941d918b57f96dd1af3863f0c4c8c62e79dde24`. It describes cited stage summaries, reported usage and optional cost estimates, explicit budget pause, configurable pacing, and compact Focus. The desktop Focus image comes from that source tree; the mobile Focus image was captured by the isolated browser acceptance fixture at UI source `2c153d2c57eb76b374ca80cdb1f0298edcbd5444`, included in this release. Both use synthetic content and loopback simulated Providers. Other images retain their recorded provenance.
 
 The Beta 8 update follows published Cove source `e73ce8e5b7d0796c3d4213cdb027384e7fa122bf`, with opt-in research, saved references, external search data flows, and schema 22 upgrade guidance. `web-research-desktop.png` and `web-research-mobile.png` are unmodified captures from that source's isolated `web-search` browser fixture. The search-settings desktop/mobile captures come from release preparation `6052c1b`, as recorded in Cove's `docs/images/README.md`. All use synthetic model and source data, with no live search credentials or personal workspace. Existing screenshots retain their provenance above.
+
+The Beta 9 update follows Cove release `v0.1.0-beta.9`, including local Qwen chat, BGE document search, five speech bundles, optional answer/Debate reading, Projects, and schema 27 guidance. Feature source includes `720db97086aba4a5c6bf3c5f9932d4a3a4404b43`. All existing screenshots retain the earlier provenance recorded above; this update adds release copy and links without changing other product pages.
