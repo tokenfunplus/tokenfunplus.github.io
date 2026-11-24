@@ -91,6 +91,12 @@ p + p { margin-top: 18px; }
 .feature-list { margin: 25px 0 0; padding: 0; list-style: none; display: grid; gap: 11px; }
 .feature-list li { display: flex; gap: 10px; align-items: start; font-size: 13px; color: #64707b; }
 .feature-list li::before { content: "✓"; color: #688b78; font-size: 11px; padding-top: 2px; }
+.quick-panel { padding-block: clamp(54px, 7vw, 84px) 32px; }
+.quick-panel kbd { white-space: nowrap; font: inherit; font-weight: 600; color: var(--ink); }
+.quick-panel-compact { width: 100%; margin-top: 28px; }
+.quick-panel-capture { width: 100%; max-width: 520px; justify-self: center; }
+.quick-panel-compact, .quick-panel-capture img { border-radius: 12px; box-shadow: 0 14px 36px -18px #314e695c, 0 1px 3px #314e6929; }
+.quick-panel-capture .preview-caption { margin-top: 10px; }
 .comparison-visual { background: #edf2f7; border: 1px solid #dfe6eb; border-radius: 21px; padding: 27px; }
 .comparison-crop { height: 405px; overflow: hidden; border: 1px solid #d4dfe5; border-radius: 11px; background: #fafbf9; }
 .comparison-crop img { width: 142%; max-width: none; margin-left: -27%; margin-top: -9%; }
