@@ -5,11 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#fafbf9">
   <title>Cove — A little more room for your AI.</title>
-  <meta name="description" content="A local-first AI chat app for Mac. Bring selected text into the Quick Panel, compare models, and review local document excerpts. Download Cove 0.1.0-beta.12.">
+  <meta name="description" content="A local-first AI chat app for Mac. Try interactive quizzes, rank options, or edit a draft in a single-model chat. Download Cove 0.1.0-beta.13.">
   <link rel="canonical" href="https://tokenfunplus.github.io/cove/">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Cove — A little more room for your AI.">
-  <meta property="og:description" content="Ask Cove about selected text and review cited passages from your local documents. Cove 0.1.0-beta.12 is available now.">
+  <meta property="og:description" content="Check a quiz answer or adjust a plan in your chat, then share your choices with the model. Cove 0.1.0-beta.13 is available now.">
   <meta property="og:url" content="https://tokenfunplus.github.io/cove/">
   <meta property="og:image" content="https://tokenfunplus.github.io/assets/cove-social.png?v=8">
   <meta property="og:image:width" content="1200">
@@ -29,20 +29,36 @@
         <a href="#quick-panel">Quick Panel</a><a href="#web-search">Web search</a><a href="#answer-tools">Answer tools</a><a href="#files">File chat</a><a href="#workspace">Your workspace</a><a href="#privacy">Privacy</a>
       </nav>
       <button class="menu-toggle" data-menu type="button" aria-controls="navigation" aria-expanded="false">Menu</button>
-      <a class="button compact header-download" href="https://github.com/tokenfunplus/cove/releases/download/v0.1.0-beta.12/Cove-0.1.0-beta.12-arm64.dmg">Download for Mac <span aria-hidden="true">↓</span></a>
+      <a class="button compact header-download" href="https://github.com/tokenfunplus/cove/releases/download/v0.1.0-beta.13/Cove-0.1.0-beta.13-arm64.dmg">Download for Mac <span aria-hidden="true">↓</span></a>
     </div>
   </header>
 
   <main id="main">
     <section class="hero" aria-labelledby="hero-title">
-      <a class="release-badge" href="https://github.com/tokenfunplus/cove/releases/tag/v0.1.0-beta.12">Beta 12 · Ask Cove <span aria-hidden="true">↗</span></a>
+      <a class="release-badge" href="https://github.com/tokenfunplus/cove/releases/tag/v0.1.0-beta.13">Beta 13 · Interactive replies <span aria-hidden="true">↗</span></a>
       <h1 id="hero-title">A little more room<br><span>for your AI.</span></h1>
-      <p class="intro">Ask Cove about text you select in another app. Compare answers, find passages in your documents, and keep your conversations in your own Mac workspace.</p>
+      <p class="intro">Check a quiz answer, rearrange a weekend plan, or edit a draft right in your chat. Keep your edits on your Mac and choose when to share them with your model.</p>
       <div class="hero-actions">
-        <a class="button" href="https://github.com/tokenfunplus/cove/releases/download/v0.1.0-beta.12/Cove-0.1.0-beta.12-arm64.dmg"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M12 3v12m-5-5 5 5 5-5M5 16v4h14v-4" stroke-linecap="round" stroke-linejoin="round"/></svg>Download for Mac</a>
-        <a class="button secondary" href="#quick-panel">See the Quick Panel <span aria-hidden="true">↓</span></a>
+        <a class="button" href="https://github.com/tokenfunplus/cove/releases/download/v0.1.0-beta.13/Cove-0.1.0-beta.13-arm64.dmg"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M12 3v12m-5-5 5 5 5-5M5 16v4h14v-4" stroke-linecap="round" stroke-linejoin="round"/></svg>Download for Mac</a>
+        <a class="button secondary" href="#interactive-replies">See an interactive reply <span aria-hidden="true">↓</span></a>
       </div>
-      <p class="system-note">0.1.0-beta.12 &nbsp;·&nbsp; Apple Silicon &nbsp;·&nbsp; macOS 13 or later</p>
+      <p class="system-note">0.1.0-beta.13 &nbsp;·&nbsp; Apple Silicon &nbsp;·&nbsp; macOS 13 or later</p>
+    </section>
+
+    <section class="wrap section feature-split" id="interactive-replies" aria-labelledby="interactive-title">
+      <div class="feature-copy">
+        <h2 id="interactive-title">Try a quiz in your chat.</h2>
+        <p>Ask one supported model for a practice question. If it replies with a quiz card, select an answer and check the explanation. Cove saves your progress on this Mac.</p>
+        <ul class="feature-list">
+          <li>Other cards let you rank options, adjust a budget, or edit text with a live preview.</li>
+          <li><span>Choose <strong>Continue</strong> to send the current values. For a typed follow-up, select <strong>Include card</strong> to share them with your question.</span></li>
+        </ul>
+        <a class="text-link" href="https://github.com/tokenfunplus/cove/blob/v0.1.0-beta.13/docs/user-guide.md#try-interactive-replies">Read the interactive replies guide <span aria-hidden="true">↗</span></a>
+      </div>
+      <figure class="quick-panel-capture">
+        <a href="assets/interactive-quiz-beta13.png"><img src="assets/interactive-quiz-beta13.png" width="1188" height="893" alt="Moon quiz in Cove with the correct answer selected and the explanation visible." loading="lazy"></a>
+        <figcaption class="preview-caption">A practice question from a simulated model. Open the screenshot to view it at full size.</figcaption>
+      </figure>
     </section>
 
     <section class="wrap section feature-split quick-panel" id="quick-panel" aria-labelledby="quick-panel-title">
@@ -55,7 +71,7 @@
           <li>After the reply, choose Continue in Cove to open the same conversation in your browser.</li>
         </ul>
         <img class="quick-panel-compact" src="assets/cove-quick-panel-compact.png" width="1240" height="360" alt="The native Cove Quick Panel, with keyboard focus in the empty composer." loading="lazy">
-        <a class="text-link" href="https://github.com/tokenfunplus/cove/blob/v0.1.0-beta.12/docs/user-guide.md#use-the-quick-panel">Read the Quick Panel guide <span aria-hidden="true">↗</span></a>
+        <a class="text-link" href="https://github.com/tokenfunplus/cove/blob/v0.1.0-beta.13/docs/user-guide.md#use-the-quick-panel">Read the Quick Panel guide <span aria-hidden="true">↗</span></a>
       </div>
       <figure class="quick-panel-capture">
         <img src="assets/cove-quick-panel-answer.png" width="1240" height="1304" alt="The expanded Quick Panel with a sample port error, an explanation, and the Continue in Cove button." loading="lazy">
@@ -198,10 +214,10 @@
 
     <section class="wrap" id="download" aria-labelledby="download-title">
       <div class="download-panel">
-        <div class="download-heading"><div class="download-title"><img src="icon.svg?v=4" width="59" height="59" alt=""><div><h2 id="download-title">A good place to start.</h2><p>Cove for Mac &nbsp;·&nbsp; Public beta 0.1.0-beta.12</p></div></div><div class="download-actions"><a class="button" href="https://github.com/tokenfunplus/cove/releases/download/v0.1.0-beta.12/Cove-0.1.0-beta.12-arm64.dmg">Download for Mac <span aria-hidden="true">↓</span></a><p>Apple Silicon &nbsp;·&nbsp; macOS 13+</p></div></div>
-        <ol class="install-steps"><li><div><strong>Download the beta</strong>Get the DMG from GitHub Releases. Developer ID signed and Apple notarized.</div></li><li><div><strong>Make it at home</strong>Open the DMG and drag Cove to Applications. Launch it from there.</div></li><li><div><strong>Bring your models</strong>Install a local model in Settings &gt; On this Mac &gt; Discover, or configure your own provider and key. Choose a model and start a conversation.</div></li></ol>
+        <div class="download-heading"><div class="download-title"><img src="icon.svg?v=4" width="59" height="59" alt=""><div><h2 id="download-title">A good place to start.</h2><p>Cove for Mac &nbsp;·&nbsp; Public beta 0.1.0-beta.13</p></div></div><div class="download-actions"><a class="button" href="https://github.com/tokenfunplus/cove/releases/download/v0.1.0-beta.13/Cove-0.1.0-beta.13-arm64.dmg">Download for Mac <span aria-hidden="true">↓</span></a><p>Apple Silicon &nbsp;·&nbsp; macOS 13+</p></div></div>
+        <ol class="install-steps"><li><div><strong>Download the beta</strong>Get the DMG from GitHub Releases. Check the release notes for signing and notarization details.</div></li><li><div><strong>Make it at home</strong>Open the DMG and drag Cove to Applications. Launch it from there.</div></li><li><div><strong>Bring your models</strong>Install a local model in Settings &gt; On this Mac &gt; Discover, or configure your own provider and key. Choose a model and start a conversation.</div></li></ol>
       </div>
-      <div class="release-links"><a href="https://github.com/tokenfunplus/cove/blob/main/docs/user-guide.md">User guide ↗</a><a href="https://github.com/tokenfunplus/cove/releases/tag/v0.1.0-beta.12">Release notes ↗</a><a href="https://github.com/tokenfunplus/cove/releases/download/v0.1.0-beta.12/Cove-0.1.0-beta.12-arm64.dmg.sha256">SHA-256 checksum ↗</a><a href="https://github.com/tokenfunplus/cove">View source ↗</a></div>
+      <div class="release-links"><a href="https://github.com/tokenfunplus/cove/blob/main/docs/user-guide.md">User guide ↗</a><a href="https://github.com/tokenfunplus/cove/releases/tag/v0.1.0-beta.13">Release notes ↗</a><a href="https://github.com/tokenfunplus/cove/releases/download/v0.1.0-beta.13/Cove-0.1.0-beta.13-arm64.dmg.sha256">SHA-256 checksum ↗</a><a href="https://github.com/tokenfunplus/cove">View source ↗</a></div>
     </section>
 
     <section class="wrap section faq-section" aria-labelledby="faq-title">
@@ -212,15 +228,15 @@
         <details><summary>Are models running on my Mac?</summary><p>You choose. Install integrated local chat, selected-document search, or English/Chinese speech in On this Mac &gt; Discover. Installed models work offline. Only on this Mac suppresses Web research and rejects remote chat targets, including retries. Cloud providers still receive your prompt and selected context when chosen.</p></details>
         <details><summary>What can Cove verify?</summary><p>Supported NearAI models can use browser-side encryption and hardware attestation. Evidence is shown per response and support varies by model. Ordinary HTTPS does not by itself prove confidential model execution. The NearAI preset currently uses its staging service.</p></details>
         <details><summary>Which sources can I attach?</summary><p>Attach UTF-8 text, Markdown, code, text-based PDFs, or explicitly read public webpages. Files and webpages share a four-source limit, each up to 4 MiB. Extracted text and context have additional limits. Scanned-only PDFs require OCR first. Original bytes and source text are saved locally; selected Providers receive extracted text.</p></details>
-        <details><summary>What changed in Beta 12?</summary><p>Ask Cove brings selected text into the Quick Panel from macOS Services. Local document search shows short, readable excerpts and opens the cited text. The Continuum welcome ribbon animates when visible and stays still when reduced motion is enabled.</p></details>
-        <details><summary>Can I return to an earlier beta?</summary><p>Beta 12 upgrades the local database to SQLite schema 28. Earlier builds cannot reopen the upgraded database. Quit Cove and keep a compatible data backup before upgrading if you need a rollback path. Keychain credentials are stored separately.</p></details>
+        <details><summary>Which chats support interactive replies?</summary><p>Select one external model. Cove offers card support when the model’s reported context window is at least 8,192 tokens or its size is unknown. Cards appear when the model returns a supported reply. Built-in local models, model comparisons, and Debate use their existing reply formats.</p></details>
+        <details><summary>Can I return to an earlier beta?</summary><p>Beta 13 upgrades the local database to SQLite schema 29. Earlier builds cannot reopen the upgraded database. Quit Cove and keep a compatible data backup before upgrading if you need a rollback path. Keychain credentials are stored separately.</p></details>
         <details><summary>Can I change the interface language?</summary><p>The interface currently uses English. Messages, conversation titles, and prompts support Unicode content, including Chinese.</p></details>
         <details><summary>How do I get beta updates?</summary><p>In the Cove menu bar, open <strong>Check for Updates</strong> and choose <strong>Check Beta Releases…</strong> to look for newer betas, release candidates, or final versions. Choose <strong>Check Stable Releases…</strong> to check the stable channel. Both actions show available releases and link to downloads.</p></details>
       </div>
     </section>
   </main>
 
-  <footer class="site-footer"><div class="wrap footer-inner"><a class="footer-brand" href="../"><img src="icon.svg?v=4" width="24" height="24" alt="">Cove &nbsp;·&nbsp; Made by TokenFunPlus</a><div class="footer-links"><a href="https://discord.gg/7jdddhG8ZG">Discord</a><a href="https://github.com/tokenfunplus/cove">GitHub</a><a href="https://github.com/tokenfunplus/cove/blob/main/docs/privacy.md">Privacy</a><a href="https://github.com/tokenfunplus/cove/releases/tag/v0.1.0-beta.12">Release notes</a><a href="../">All projects ↗</a></div></div></footer>
+  <footer class="site-footer"><div class="wrap footer-inner"><a class="footer-brand" href="../"><img src="icon.svg?v=4" width="24" height="24" alt="">Cove &nbsp;·&nbsp; Made by TokenFunPlus</a><div class="footer-links"><a href="https://discord.gg/7jdddhG8ZG">Discord</a><a href="https://github.com/tokenfunplus/cove">GitHub</a><a href="https://github.com/tokenfunplus/cove/blob/main/docs/privacy.md">Privacy</a><a href="https://github.com/tokenfunplus/cove/releases/tag/v0.1.0-beta.13">Release notes</a><a href="../">All projects ↗</a></div></div></footer>
   <dialog class="preview-dialog" data-preview-dialog aria-label="Full Cove workspace preview"><button class="dialog-close" type="button" data-close-dialog>Close ×</button><img src="assets/chat-light.webp?v=4" width="2160" height="1440" alt="The Cove workspace preview."></dialog>
 </body>
 </html>

@@ -21,7 +21,7 @@ GitHub Pages publishes `docs/` from `main`. A push to that branch triggers a new
 ## Content and privacy
 
 - All copy is English. Product capabilities must match the relevant project documentation.
-- Cove is public and its `0.1.0-beta.12` release is available. Keep the version, requirements, release links, file chat limits, and download link aligned with the published GitHub release. The current UI is English and user content supports Unicode. Screenshot previews on the website do not contact a model provider.
+- Cove is public and its `0.1.0-beta.13` release is available. Keep the version, requirements, release links, file chat limits, and download link aligned with the published GitHub release. The current UI is English and user content supports Unicode. Screenshot previews on the website do not contact a model provider.
 - Cove stores history locally. Installed local chat, selected-document search, and speech run on this Mac; cloud Providers receive the prompt and selected context when chosen. Do not imply every catalog candidate is integrated or every Provider supports confidential inference.
 - Binance Studio screenshots come from its public simulation pages. Prices and orders shown are examples, with no account connected.
 - Keep credentials, conversation data, personal notes, and local application state out of this repository.
@@ -64,3 +64,5 @@ The Beta 9 update follows Cove release `v0.1.0-beta.9`, including local Qwen cha
 The Beta 10 update follows Cove release `v0.1.0-beta.10` at source `22db7fa7f9a71518888fa2100fcf0348cdd45187`. It covers the macOS Quick Panel, resumable downloads, clearer local inference activity, and local search controls. The two Quick Panel screenshots are unmodified AppKit and WebKit captures recorded in Cove commit `2a2642c1c8b41a38d7722a5ce52b609e3cca0ff0`, using a disposable Local Service with a loopback simulated Provider and a synthetic conversation. Existing gallery screenshots retain their provenance above.
 
 The Beta 12 update follows Cove release `v0.1.0-beta.12` at source `473519cfd7be30d8bab59d6f06b66eefac708f87`. It covers Ask Cove in macOS Services, clearer cited excerpts in local document search, and schema 28 upgrade guidance. `local-document-search-beta12.png` is an unmodified Cove UI capture from `476dbf393ed4ef08c12cdf80b9440665e9f14a6f` with synthetic English documents and queries. The Quick Panel and other previews retain their original sources above.
+
+The Beta 13 update follows [Cove v0.1.0-beta.13](https://github.com/tokenfunplus/cove/releases/tag/v0.1.0-beta.13). The interactive reply feature landed in Cove commit `b8186d0bfd55e5e8cc5e6342d1fd2ed816083c67`. The unmodified `interactive-quiz-beta13.png` capture comes from [PR #57](https://github.com/tokenfunplus/cove/pull/57) at `fce2823e803ce43516d7ab9e5a5379b8536b71b0`, using a synthetic quiz and a local demo provider.
